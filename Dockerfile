@@ -5,7 +5,7 @@ RUN mkdir /usr/share/man/man1/
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends python3.6 build-essential
 
-RUN export DEBIAN_FRONTEND=noninteractive && apt-get -y install --no-install-recommends git cmake wget
+RUN export DEBIAN_FRONTEND=noninteractive && apt-get -y install --no-install-recommends git cmake wget qt5-default
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get -y install --no-install-recommends libjpeg-dev libtiff-dev libpng-dev
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get -y install --no-install-recommends libgtk-3-dev
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get -y install --no-install-recommends libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
